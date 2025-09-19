@@ -33,7 +33,7 @@ if (! defined('_WEB')) {
  * @package WEb
  * @subpackage WebError
  */
-class Error extends Library {
+class ErrorHandler extends Library {
 
 	/**
 	 * Implement GetInstance() method.
@@ -59,7 +59,7 @@ class Error extends Library {
 	public function Load() {
 
 		set_error_handler(array(
-				Error::GetInstance(),
+				ErrorHandler::GetInstance(),
 				'Handle'
 		));
 		

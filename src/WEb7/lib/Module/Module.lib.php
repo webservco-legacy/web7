@@ -159,6 +159,10 @@ class Module extends Library
      */
     public function GetCurrentModule($request)
     {
+        if ($request === null) {
+            return null;
+        }
+
         return strtolower(str_replace('Module_', '', $request['module']));
     }
 
@@ -186,7 +190,7 @@ class Module extends Library
         /**
          * Current location (Module/Controller/Action)
          */
-        $data['location'] = $request['location'];
+        $data['location'] = isset($request['location']) ? $request['location'] : null;
         
         /**
          * Location path.

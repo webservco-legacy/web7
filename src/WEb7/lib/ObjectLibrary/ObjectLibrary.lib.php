@@ -37,7 +37,7 @@ if (!defined('_WEB')) {
  * @subpackage WebObject
  *            
  */
-class Object extends Library {
+class ObjectLibrary extends Library {
 
 	/**
 	 * Object Id.

@@ -33,7 +33,7 @@ if (! defined('_WEB')) {
  * @package WEb
  * @subpackage WebString
  */
-class String extends Library
+class StringLibrary extends Library
 {
 
     /**

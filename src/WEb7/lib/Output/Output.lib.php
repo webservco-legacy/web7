@@ -244,7 +244,7 @@ class Output extends Library {
 			 */
 			$template_suffix = !empty($customTemplate) ? $customTemplate : $request['action'];
 			
-			return str_replace('Module_', NULL, $request['module']) . '/' . $this->_mTemplatePrefix . strtolower($template_suffix);
+			return str_replace('Module_', '', $request['module']) . '/' . $this->_mTemplatePrefix . strtolower($template_suffix);
 		
 		} else {
 			

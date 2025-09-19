@@ -193,18 +193,6 @@ class Security extends Library {
 	 * @return string
 	 */
 	public function FilterInput($input, $disableTags = TRUE, $filterRequest = FALSE) {
-
-		/**
-		 * If magic quotes are enabled, strip slashes from input.
-		 */
-		if (get_magic_quotes_gpc()) {
-			/**
-			 *
-			 * @var string
-			 */
-			$input = stripslashes($input);
-		}
-
 		/**
 		 * Some unwanted chars.
 		 *

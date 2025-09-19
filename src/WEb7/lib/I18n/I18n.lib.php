@@ -283,7 +283,7 @@ class I18n extends Library
          * @var string
          */
         $this->_mDomain = $domain_name;
-        
+
         /**
          * Check if current locale contains a custom codeset.
          */

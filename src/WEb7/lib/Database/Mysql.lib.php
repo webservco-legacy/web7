@@ -61,32 +61,26 @@ class Database_Mysql extends Database implements Interface_Database
          *
          * @var resource
          */
-        $db_link = mysql_connect($this->_mDbHost . ':' . $db_port, $this->_mDbUser, $this->_mDbPassword);
+        $db_link = mysqli_connect(
+            $this->_mDbHost,
+            $this->_mDbUser,
+            $this->_mDbPassword,
+            $this->_mDbDatabase,
+            $db_port
+        );
         
         if (! $db_link) {
             /**
              *
              * @var string
              */
-            $message = __('Database library: Error connecting to database management server.', 'WEb') . ' ' . mysql_error();
+            $message = __('Database library: Error connecting to database management server.', 'WEb') . ' ' . mysqli_connect_error();
             
             trigger_error($message);
             
             return FALSE;
         }
-        
-        if (TRUE !== mysql_select_db($this->_mDbDatabase, $db_link)) {
-            /**
-             *
-             * @var string
-             */
-            $message = sprintf(__('Database library: Error opening database %s.', 'WEb'), $this->_mDbDatabase) . ' ' . mysql_error();
-            
-            trigger_error($message);
-            
-            return FALSE;
-        }
-        
+
         /**
          * Set database link identifier.
          *
@@ -105,7 +99,7 @@ class Database_Mysql extends Database implements Interface_Database
         /**
          * UTF Compatibility.
          */
-        mysql_set_charset('utf8', $this->_mDbLink);
+        mysqli_set_charset($this->_mDbLink, 'utf8');
         
         return TRUE;
     }
@@ -117,7 +111,7 @@ class Database_Mysql extends Database implements Interface_Database
      */
     public function Disconnect()
     {
-        return mysql_close($this->_mDbLink);
+        return mysqli_close($this->_mDbLink);
     }
 
     /**
@@ -133,7 +127,7 @@ class Database_Mysql extends Database implements Interface_Database
          */
         $this->Connect();
         
-        return mysql_real_escape_string($string);
+        return mysqli_real_escape_string($this->_mDbLink, $string);
     }
 
     /**

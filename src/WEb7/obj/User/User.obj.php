@@ -33,7 +33,7 @@ if (! defined('_WEB')) {
  * @package WEb
  * @subpackage WebObject
  */
-class User extends Object {
+class User extends ObjectLibrary {
 
 	/**
 	 * Object properties.

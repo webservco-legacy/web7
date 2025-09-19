@@ -409,7 +409,7 @@ class Core
              *
              * @var object
              */
-            self::$_msErrorObject = Error::GetInstance();
+            self::$_msErrorObject = ErrorHandler::GetInstance();
         }
         
         return self::$_msErrorObject;
@@ -607,7 +607,7 @@ class Core
              *
              * @var object
              */
-            self::$_msStringObject = String::GetInstance();
+            self::$_msStringObject = StringLibrary::GetInstance();
         }
         
         return self::$_msStringObject;
@@ -1043,7 +1043,7 @@ class Core
      *
      * @return mixed
      */
-    final private static function _Wget($url, $postData = array())
+    private static function _Wget($url, $postData = array())
     {
         
         /**
@@ -1241,7 +1241,7 @@ class Core
      *
      * @return array
      */
-    final private static function _LicSetParams()
+    private static function _LicSetParams()
     {
         
         /**
@@ -1302,7 +1302,7 @@ class Core
      *
      * @return string
      */
-    final private static function _LicGet($license, $request)
+    private static function _LicGet($license, $request)
     {
         
         /**
@@ -1366,7 +1366,7 @@ class Core
      *
      * @return void
      */
-    final private static function _LicUpdate($license)
+    private static function _LicUpdate($license)
     {
         
         /**
@@ -1453,7 +1453,7 @@ class Core
      *
      * @return void
      */
-    final private static function _LicTriggerError($license, $status, $errorMessage = NULL)
+    private static function _LicTriggerError($license, $status, $errorMessage = NULL)
     {
         
         /**
@@ -1487,7 +1487,7 @@ class Core
      *
      * @return mixed
      */
-    final private static function _LicGetKeyPath($license)
+    private static function _LicGetKeyPath($license)
     {
         
         /**
@@ -1514,7 +1514,7 @@ class Core
      *
      * @return mixed
      */
-    final private static function _LicCheck()
+    private static function _LicCheck()
     {
         
         /**
