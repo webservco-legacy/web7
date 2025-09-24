@@ -155,7 +155,7 @@ class Database_Pdo extends Database implements Interface_Database {
 		/**
 		 * TODO implement method.
 		 */
-		trigger_error(__('Database library: functionality not implemented', 'WEb'));
+		throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
 	}
 
 	/**
@@ -168,7 +168,7 @@ class Database_Pdo extends Database implements Interface_Database {
 		/**
 		 * TODO implement method.
 		 */
-		trigger_error(__('Database library: functionality not implemented', 'WEb'));
+		throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
 	}
 
 	/**
@@ -181,7 +181,7 @@ class Database_Pdo extends Database implements Interface_Database {
 		/**
 		 * TODO implement method.
 		 */
-		trigger_error(__('Database library: functionality not implemented', 'WEb'));
+		throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
 	}
 
 	/**
@@ -194,7 +194,7 @@ class Database_Pdo extends Database implements Interface_Database {
 		/**
 		 * TODO implement method.
 		 */
-		trigger_error(__('Database library: functionality not implemented', 'WEb'));
+		throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
 	}
 
 	/**
@@ -207,7 +207,7 @@ class Database_Pdo extends Database implements Interface_Database {
 		/**
 		 * TODO implement method.
 		 */
-		trigger_error(__('Database library: functionality not implemented', 'WEb'));
+		throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
 	}
 
 	/**
@@ -220,7 +220,7 @@ class Database_Pdo extends Database implements Interface_Database {
 		/**
 		 * TODO implement method.
 		 */
-		trigger_error(__('Database library: functionality not implemented', 'WEb'));
+		throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
 	}
 
 	/**
@@ -233,7 +233,7 @@ class Database_Pdo extends Database implements Interface_Database {
 		/**
 		 * TODO implement method.
 		 */
-		trigger_error(__('Database library: functionality not implemented', 'WEb'));
+		throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
 	}
 
 	/**
@@ -246,7 +246,7 @@ class Database_Pdo extends Database implements Interface_Database {
 		/**
 		 * TODO implement method.
 		 */
-		trigger_error(__('Database library: functionality not implemented', 'WEb'));
+		throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
 	}
 
 	/**
@@ -259,7 +259,7 @@ class Database_Pdo extends Database implements Interface_Database {
 		/**
 		 * TODO implement method.
 		 */
-		trigger_error(__('Database library: functionality not implemented', 'WEb'));
+		throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
 	}
 
 	/**
@@ -272,7 +272,7 @@ class Database_Pdo extends Database implements Interface_Database {
 		/**
 		 * TODO implement method.
 		 */
-		trigger_error(__('Database library: functionality not implemented', 'WEb'));
+		throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
 	}
 
 	/**
@@ -285,7 +285,7 @@ class Database_Pdo extends Database implements Interface_Database {
 		/**
 		 * TODO implement method.
 		 */
-		trigger_error(__('Database library: functionality not implemented', 'WEb'));
+		throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
 	}
 
 	/**
@@ -298,7 +298,7 @@ class Database_Pdo extends Database implements Interface_Database {
 		/**
 		 * TODO implement method.
 		 */
-		trigger_error(__('Database library: functionality not implemented', 'WEb'));
+		throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
 	}
 
 	/**
@@ -311,7 +311,7 @@ class Database_Pdo extends Database implements Interface_Database {
 		/**
 		 * TODO implement method.
 		 */
-		trigger_error(__('Database library: functionality not implemented', 'WEb'));
+		throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
 	}
 
 	/**
@@ -324,7 +324,7 @@ class Database_Pdo extends Database implements Interface_Database {
 		/**
 		 * TODO implement method.
 		 */
-		trigger_error(__('Database library: functionality not implemented', 'WEb'));
+		throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
 	}
 
 	/**
@@ -337,7 +337,7 @@ class Database_Pdo extends Database implements Interface_Database {
 		/**
 		 * TODO implement method.
 		 */
-		trigger_error(__('Database library: functionality not implemented', 'WEb'));
+		throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
 	}
 
 	/**
@@ -350,7 +350,7 @@ class Database_Pdo extends Database implements Interface_Database {
 		/**
 		 * TODO implement method.
 		 */
-		trigger_error(__('Database library: functionality not implemented', 'WEb'));
+		throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
 	}
 }
 ?>

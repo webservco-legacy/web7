@@ -106,7 +106,7 @@ class Graphics extends Library {
 		
 		if (! is_readable($image_path)) {
 			
-			trigger_error(__('Graphics library: Source image not found.', 'WEb'));
+			throw new ErrorException(__('Graphics library: Source image not found.', 'WEb'));
 		}
 		
 		ob_start();
@@ -198,7 +198,7 @@ class Graphics extends Library {
 			
 			default :
 				
-				trigger_error(__('Graphics library: Image type not supported.', 'WEb'));
+				throw new ErrorException(__('Graphics library: Image type not supported.', 'WEb'));
 				
 				break;
 		}
@@ -282,12 +282,12 @@ class Graphics extends Library {
 		
 		if (empty($this->_mProp['image_dir'])) {
 			
-			trigger_error(__('Graphics library: Image directory is required.', 'WEb'));
+			throw new ErrorException(__('Graphics library: Image directory is required.', 'WEb'));
 		}
 		
 		if (empty($this->_mProp['image_name'])) {
 			
-			trigger_error(__('Graphics library: Image name is required.', 'WEb'));
+			throw new ErrorException(__('Graphics library: Image name is required.', 'WEb'));
 		}
 	}
 

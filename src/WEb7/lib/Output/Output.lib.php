@@ -370,7 +370,7 @@ class Output extends Library {
 			 */
 			$err_msg_b = _('File not found.');
 			
-			trigger_error($err_msg_a . ' ' . $err_msg_b, 256);
+			throw new ErrorException($err_msg_a . ' ' . $err_msg_b, 256);
 			
 			exit();
 		}

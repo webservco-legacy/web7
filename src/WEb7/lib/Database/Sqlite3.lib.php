@@ -58,7 +58,7 @@ class Database_Sqlite3 extends Database implements Interface_Database
              */
             $message = __('Database library: Database file is not readable.', 'WEb');
             
-            trigger_error($message);
+            throw new ErrorException($message);
             
             return FALSE;
         }
@@ -77,7 +77,7 @@ class Database_Sqlite3 extends Database implements Interface_Database
              */
             $message = sprintf(__('Database library: Error opening database %s.', 'WEb'), $this->_mDbDatabase) . ' ' . $e->getMessage();
             
-            trigger_error($message);
+            throw new ErrorException($message);
             
             return FALSE;
         }
@@ -148,7 +148,7 @@ class Database_Sqlite3 extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -162,7 +162,7 @@ class Database_Sqlite3 extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -176,7 +176,7 @@ class Database_Sqlite3 extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -190,7 +190,7 @@ class Database_Sqlite3 extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -204,7 +204,7 @@ class Database_Sqlite3 extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -218,7 +218,7 @@ class Database_Sqlite3 extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -232,7 +232,7 @@ class Database_Sqlite3 extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -246,7 +246,7 @@ class Database_Sqlite3 extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -260,7 +260,7 @@ class Database_Sqlite3 extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -274,7 +274,7 @@ class Database_Sqlite3 extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -288,7 +288,7 @@ class Database_Sqlite3 extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -302,7 +302,7 @@ class Database_Sqlite3 extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -316,7 +316,7 @@ class Database_Sqlite3 extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -330,7 +330,7 @@ class Database_Sqlite3 extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -344,7 +344,7 @@ class Database_Sqlite3 extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -358,7 +358,7 @@ class Database_Sqlite3 extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 }
 ?>

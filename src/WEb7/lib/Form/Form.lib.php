@@ -557,7 +557,7 @@ class Form extends Library
                          */
                         $err_msg = sprintf(__('Form Library: Validation method "%s" not found.', 'WEb'), $condition_function);
                         
-                        trigger_error($err_msg);
+                        throw new ErrorException($err_msg);
                     }
                 }
             }
@@ -677,7 +677,7 @@ class Form extends Library
                              */
                             $err_msg = sprintf(__('Form Library: Filter method "%s" not found.', 'WEb'), $filter);
                             
-                            trigger_error($err_msg);
+                            throw new ErrorException($err_msg);
                         }
                 }
             } else {

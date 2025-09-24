@@ -135,7 +135,7 @@ class Output_Web extends Output implements Interface_Output {
 		$tpl_path = $this->_mSkinPath . $this->_mSkinDir . '/' . $outTemplate . $this->_mExtension;
 		
 		if (!is_readable($tpl_path)) {
-			trigger_error(__('Output library: Template file not found: ', 'WEb') . $tpl_path, 256);
+			throw new ErrorException(__('Output library: Template file not found: ', 'WEb') . $tpl_path, 256);
 		}
 		
 		/**

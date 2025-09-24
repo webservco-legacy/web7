@@ -89,7 +89,7 @@ class FacebookApi extends Library {
 		
 		if (empty($config['appid']) || empty($config['secret'])) {
 			
-			trigger_error(__('FacebookApi Library: Initialization error - missing credentials', 'App'));
+			throw new ErrorException(__('FacebookApi Library: Initialization error - missing credentials', 'App'));
 		}
 		
 		require "{$path_app}{$config['path_sdk']}facebook.php";
@@ -102,7 +102,7 @@ class FacebookApi extends Library {
 		
 		if (empty($this->_mFacebook)) {
 			
-			trigger_error(__('FacebookApi Library: Initialization error.', 'App'));
+			throw new ErrorException(__('FacebookApi Library: Initialization error.', 'App'));
 		}
 	}
 
@@ -232,7 +232,7 @@ class FacebookApi extends Library {
 			
 			$error_message = curl_error($curl);
 			
-			trigger_error(__('FacebookApi Library: FacebookScrape cURL error', 'App') . " - {$error_message}");
+			throw new ErrorException(__('FacebookApi Library: FacebookScrape cURL error', 'App') . " - {$error_message}");
 			
 			exit();
 		}

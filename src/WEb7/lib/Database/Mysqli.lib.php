@@ -101,7 +101,7 @@ class Database_Mysqli extends Database implements Interface_Database
              */
             $message = __('Database library: Error connecting to database management server.', 'WEb') . ' ' . $db_link->connect_error;
             
-            trigger_error($message);
+            throw new ErrorException($message);
             
             return FALSE;
         }
@@ -205,7 +205,7 @@ class Database_Mysqli extends Database implements Interface_Database
             
             $message = __('Database library: Error executing query.', 'WEb') . ' ' . $this->_mDbLink->error;
             
-            trigger_error($message);
+            throw new ErrorException($message);
         }
         
         Core::Log()->Write($query, 'debug');
@@ -232,7 +232,7 @@ class Database_Mysqli extends Database implements Interface_Database
             
             $message = __('Database library: Error generating UUID:', 'WEb') . ' ' . $this->_mDbLink->error;
             
-            trigger_error($message);
+            throw new ErrorException($message);
         }
         
         /**
@@ -278,7 +278,7 @@ class Database_Mysqli extends Database implements Interface_Database
             
             $message = __('Database library: Error getting primary key:', 'WEb') . ' ' . $this->_mDbLink->error;
             
-            trigger_error($message);
+            throw new ErrorException($message);
         }
         
         /**
@@ -384,7 +384,7 @@ class Database_Mysqli extends Database implements Interface_Database
             
             $message = __('Database library: Error executing statement:', 'WEb') . ' ' . $this->_mDbLink->error;
             
-            trigger_error($message);
+            throw new ErrorException($message);
         }
         
         $this->_mDbStmt->close();
@@ -521,7 +521,7 @@ class Database_Mysqli extends Database implements Interface_Database
             
             $message = __('Database library: Error executing statement:', 'WEb') . ' ' . $this->_mDbLink->error;
             
-            trigger_error($message);
+            throw new ErrorException($message);
         }
         
         /**
@@ -691,7 +691,7 @@ class Database_Mysqli extends Database implements Interface_Database
             
             $message = __('Database library: Error executing statement:', 'WEb') . ' ' . $this->_mDbLink->error;
             
-            trigger_error($message);
+            throw new ErrorException($message);
         }
         
         $this->_mDbStmt->close();
@@ -753,7 +753,7 @@ class Database_Mysqli extends Database implements Interface_Database
             
             $message = __('Database library: Error executing statement:', 'WEb') . ' ' . $this->_mDbLink->error;
             
-            trigger_error($message);
+            throw new ErrorException($message);
         }
         
         $this->_mDbStmt->close();
@@ -863,7 +863,7 @@ class Database_Mysqli extends Database implements Interface_Database
             
             $message = __('Database library: Error executing statement:', 'WEb') . ' ' . $this->_mDbLink->error;
             
-            trigger_error($message);
+            throw new ErrorException($message);
         }
         
         $this->_mDbStmt->close();

@@ -76,7 +76,7 @@ class Database_Mysql extends Database implements Interface_Database
              */
             $message = __('Database library: Error connecting to database management server.', 'WEb') . ' ' . mysqli_connect_error();
             
-            trigger_error($message);
+            throw new ErrorException($message);
             
             return FALSE;
         }
@@ -152,7 +152,7 @@ class Database_Mysql extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -166,7 +166,7 @@ class Database_Mysql extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -180,7 +180,7 @@ class Database_Mysql extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -194,7 +194,7 @@ class Database_Mysql extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -208,7 +208,7 @@ class Database_Mysql extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -222,7 +222,7 @@ class Database_Mysql extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -236,7 +236,7 @@ class Database_Mysql extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -250,7 +250,7 @@ class Database_Mysql extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -264,7 +264,7 @@ class Database_Mysql extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -278,7 +278,7 @@ class Database_Mysql extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -292,7 +292,7 @@ class Database_Mysql extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -306,7 +306,7 @@ class Database_Mysql extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -320,7 +320,7 @@ class Database_Mysql extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -334,7 +334,7 @@ class Database_Mysql extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -348,7 +348,7 @@ class Database_Mysql extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 
     /**
@@ -362,7 +362,7 @@ class Database_Mysql extends Database implements Interface_Database
         /**
          * TODO implement method.
          */
-        trigger_error(__('Database library: functionality not implemented', 'WEb'));
+        throw new ErrorException(__('Database library: functionality not implemented', 'WEb'));
     }
 }
 ?>

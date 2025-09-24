@@ -1014,9 +1014,7 @@ class Core
              */
             $err_msg = sprintf(__('Core Library: Class "%s" not found.', 'WEb'), $library_name);
             
-            trigger_error($err_msg);
-            
-            exit();
+            throw new ErrorException($err_msg);
         }
         
         return call_user_func(array(
@@ -1474,9 +1472,7 @@ class Core
         
         self::Log()->Write(sprintf(__('License Status: %s.', 'WEb'), $status), 'info');
         
-        trigger_error($error_message, 512);
-        
-        exit();
+        throw new ErrorException($error_message, 512);
     }
 
     /**
