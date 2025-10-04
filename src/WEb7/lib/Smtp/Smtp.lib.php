@@ -510,6 +510,7 @@ class Smtp extends Library {
 		
 		if (in_array($code, $this->_mErrorCodes)) {
 			Core::Log()->Write(__('Smtp Library: Got error from server. Aborting transaction.', 'WEb'), 'error');
+            Core::Log()->Write(sprintf('Error code: %s', $code));
 			
 			/**
 			 * Close server connection.
