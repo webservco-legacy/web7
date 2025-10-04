@@ -651,7 +651,12 @@ class Mail extends Library {
 		}
 		
 		$this->AddAddress($from_address, 'from', $from_name);
-		
+
+        $bccAddress = $mail_settings['bcc']['address'];
+        if (!empty($bccAddress)) {
+            $this->AddAddress($bccAddress, 'bcc', $mail_settings['bcc']['name']);
+        }
+
 		$this->AddAddress($msgTo, 'to', NULL);
 		
 		return $this->Send($msgSubject, $msgBody);
