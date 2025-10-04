@@ -626,7 +626,7 @@ class Mail extends Library {
 	 *
 	 * @return boolean
 	 */
-	public function SendSimple($msgTo = NULL, $msgSubject, $msgBody, $fromAddress = NULL, $fromName = NULL) {
+	public function SendSimple($msgTo, $msgSubject, $msgBody, $fromAddress = NULL, $fromName = NULL) {
 
 		$this->SetDefaults();
 		
@@ -647,7 +647,7 @@ class Mail extends Library {
 			
 			$replyto_address = $fromAddress;
 			
-			$this->AddAddress($fromAddress, 'replyto', $fromName);
+			$this->AddAddress($replyto_address, 'replyto', $fromName);
 		}
 		
 		$this->AddAddress($from_address, 'from', $from_name);
